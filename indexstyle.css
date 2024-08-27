@@ -1,0 +1,1342 @@
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    z-index: 1;
+    border-bottom: 3px solid orange;
+
+}
+@media (max-width: 600px){
+    .header{
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        padding: 0;
+        position: fixed;
+        left: 0%;
+        top: 0;
+        z-index: 1;
+        border-bottom: 3px solid orange;
+    
+    }   
+}
+.itlogo{
+    width: 100px;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+@media (max-width: 600px) {
+    .itlogo {
+      width: 90px;
+      margin-left: -10px;
+      margin-top: -5px;
+    }
+  }
+
+.Italian{
+    font-family: Candara;
+    font-size: 18px;
+    color: orange;
+    font-weight: 700;
+    margin-left: 125px;
+    margin-top: -75px;
+}
+@media (max-width: 600px) {
+    .Italian {
+        font-family: Candara;
+        font-size: 15px;
+        color: orange;
+        font-weight: 700;
+        margin-left: 17%;
+        margin-top: -65px;
+        }
+  }
+
+  .menu{
+    display: flex;
+    gap: 90px;
+    list-style: none;
+    font-size: 15px;
+    font-family: candara;
+    font-weight: 700;
+    margin-left: 500px;
+    margin-top: -30px;
+  }
+  @media (max-width: 600px){
+    .menu{
+        display: none;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: orange;
+    transition: all 0.3s;
+  }
+
+
+  /******for mobile dropdown menu********/
+  .menu_icon{
+    display: none;
+  }
+  @media (max-width: 600px){
+    .menu_icon{
+        display: inline-block;
+        position: absolute;
+        left: 87%;
+        top: 25%;    
+    }
+  }
+
+
+  .dropdownlist{
+    color: white;
+    list-style-type: none;
+    padding: 17px;
+    font-family: gabriola;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+  }
+  @media (max-width: 600px){
+    .dropdownlist{
+        background-color: rgb(29, 28, 28);
+        width: 100%;
+        color: white;
+        list-style-type: none;
+        padding: 17px;
+        font-family: gabriola;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+        border-bottom: 3px solid orange;
+      }
+  }
+  
+  @media (max-width: 600px){
+  .dropdownitem{
+    background-color: orange;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    display: none;
+  }
+  }
+
+  @media (max-width: 600px){
+  .dropdown:hover .dropdownitem{
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        display: inline-block;
+  } 
+  }
+  /*****end of mobile dropdown menu******/
+
+/**main_view**/
+.head{
+    width: 100%;
+    height: 700px;
+}
+@media (max-width: 600px){
+    .head{
+        width: 100%;
+        height: 660px;
+    }
+}
+    
+
+.in{
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 98.8%;
+    height: 103.1%;
+    color: white;
+    position: absolute;
+    top: 1%;
+}
+@media (max-width: 600px){
+    .in{
+        width: 96%;
+        height: 661px;
+        position: absolute;
+        top: 7px;
+    }
+}
+
+.intro{
+    font-family: candara;
+    font-size: 17px;
+    font-weight: 700;
+    color: orange;
+    margin: 140px;
+}
+@media (max-width: 600px){
+    .intro{
+        font-family: candara;
+        font-size: 14px;
+        font-weight: 700;
+        color: orange;
+        margin: 90px;
+        margin-top: 130px;
+    }   
+}
+
+.refinement{
+    font-size: 70px;
+    font-family: Monotype Corsiva;
+    color: white;
+}
+@media (max-width: 600px){ 
+.refinement{
+    font-size: 40px;
+    font-family: Monotype Corsiva;
+    color: white;
+    }
+}
+
+
+.in_a_bottle{
+    margin-top: -170px;
+    margin-left: 140px;
+    font-size: 120px;
+    font-family: Gabriola;
+}
+@media (max-width: 600px){    
+.in_a_bottle{
+    margin-top: -110px;
+    margin-left: 50px;
+    font-size: 90px;
+    font-family: Gabriola;
+}
+    }
+
+.wine_bottle{
+    position: absolute;
+    top: 14%;
+    left: 40%;
+    width: 48%;
+    height: 95%;
+    filter: drop-shadow(-1px 2px 4px rgb(255, 123, 0));
+    animation: bounce-in 3s ease infinite;
+}
+@keyframes bounce-in{
+   0%{
+    opacity: 0;
+    transform: scale(.3);
+   } 
+   50%{
+    opacity: 1;
+    transform: scale(1.05);
+   }
+   70%{transform: scale(.9);}
+   100%{transform: scale(1);}
+}
+@media (max-width: 600px){
+    .wine_bottle{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 64%;
+        left: 10%;
+    }
+}
+.box{
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    filter: drop-shadow(-4px -2px 3px rgb(250, 118, 69));
+    animation: bounce-in-right 3s ease;
+}
+@keyframes bounce-in-right{
+    0%{
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    60%{
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80%{ transform: translateX(10px);}
+    100%{ transform: translateX(0);}
+}
+@media (max-width: 600px){
+    .box{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        top: 68%;
+        left: 24%;
+    }
+}
+
+/****content1*****/
+.man_drink_wine{
+    width: 900px;
+    height: 700px;
+    margin-left: 450px;
+    margin-top: -3px;
+}
+@media (max-width: 600px){
+    .man_drink_wine{
+        width: 450px;
+        height: 350px;
+        margin-left: -17.2%;
+        margin-top: -5px;
+    }
+}
+
+.message{
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    width: 500px;
+}
+@media (max-width: 600px){
+    .message{
+        position: absolute;
+        top: 190%;
+        left: 8%;
+        width: 84%;
+    }
+}
+
+.message_from {
+    color: orange;
+    font-family: Segoe UI;
+    font-size: 17px;
+    font-weight: 600;
+}
+@media (max-width: 600px){
+    .message_from {
+        color: orange;
+        font-family: Segoe UI;
+        font-size: 17px;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 30px;
+    }   
+}
+.A_New{
+    font-family: gabriola;
+    font-size: 47px;
+    font-weight: 700;
+    margin-top: -20px;
+}
+@media (max-width: 600px){
+    .A_New{
+        font-family: gabriola;
+        font-size: 44px;
+        font-weight: 700;
+        margin-top: -20px;
+        margin-left: 20px;
+        text-align: center;
+    }   
+}
+.lorem{
+    font-family: segoe UI;
+    font-size: 18px;
+    font-weight: 0;
+}
+@media (max-width: 600px){
+    .lorem{
+        font-family: segoe UI;
+        font-size: 18px;
+        margin-left: 20px;
+    }   
+}
+/****content2***/
+.wineandbottle{
+    width: 670px;
+    height: 700px;
+    margin-left: 50px;
+}
+@media (max-width: 600px){
+    .wineandbottle{
+        width: 350px;
+        height: 400px;
+        margin-left: 23px;
+        margin-top: 700px;
+    }   
+}
+
+.message2{
+    position: absolute;
+    top: 220%;
+    left: 57%;
+    width: 500px;
+}
+@media (max-width: 600px){
+    .message2{
+        position: absolute;
+        top: 390%;
+        left: 10%;
+        width: 300px;
+    }   
+}
+.f015_current{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: candara;   
+}
+@media (max-width: 600px){
+    .f015_current{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: candara;
+        margin-left: 20px;
+    }   
+}
+.italian_Cabernet_Sauvignon{
+    font-family: Monotype Corsiva;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+@media (max-width: 600px){
+    .italian_Cabernet_Sauvignon{
+        font-family: Monotype Corsiva;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-left: 20px;
+    }   
+}
+.serve_well{
+    font-family: segoe UI;
+    font-size: 18px;
+    font-weight: 0;
+}
+@media (max-width: 600px){
+    .serve_well{
+        font-family: segoe UI;
+        font-size: 18px;
+        margin-left: 20px;
+    }   
+}
+.discove{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(180, 134, 134);
+    border-radius: 0% 30% 0% 30%;
+    padding-left: 55px;
+    padding-top: 20px; 
+    box-shadow: -4px -4px 6px black;
+    font-family: candara;
+    font-weight: bold;
+    font-size: 18px;
+    transition: ease 0.3s;
+}
+@media (max-width: 600px){
+    .discove{
+        margin-left: 58px;
+    }
+}
+.discove:hover{
+    border-radius: 30% 0% 30% 0%;
+    background-color: black;
+    box-shadow: 4px 4px 7px red;
+    transition: ease 0.3s;
+}
+.view{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    border-radius: 0% 30% 0% 30%;
+    padding-left: 55px;
+    padding-top: 20px; 
+    box-shadow: -4px -4px 6px red;
+    font-family: candara;
+    font-weight: bold;
+    font-size: 18px;
+    transition: ease 0.3s;
+}
+@media (max-width: 600px){
+    .view{
+        margin-left: 58px;
+    }
+}
+.view:hover{
+    border-radius: 30% 0% 30% 0%;
+    background-color: rgb(0, 89, 255);
+    box-shadow: 4px 4px 7px orange;
+    transition: ease 0.3s;
+}
+.arrange_disview{
+    display: flex;
+    gap: 50px;
+}
+@media (max-width: 600px){
+    .arrange_disview{
+        display: inline;
+    }   
+}
+
+.speak_to{
+    font-family: candara;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+/****content3****/
+.grape_wine{
+    width: 600px;
+    height: 650px;
+    border-radius: 20% 0% 0% 0%;
+}
+@media (max-width: 600px){
+    .grape_wine{
+        width: 380px;
+        height: 400px;
+        margin-top: 220%;
+        margin-left: -29%;
+        border-radius: 20% 0% 0% 0%;
+    }   
+}
+.drink_wine{
+    width: 550px;
+    height: 650px;
+    border-radius: 0% 0% 20% 0%;
+}
+@media (max-width: 600px){
+    .drink_wine{
+        width: 380px;
+        height: 450px;
+        margin-top: -6px;
+        border-radius: 0% 0% 20% 0%;
+    }   
+}
+.display_move_drink_winegrape{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 110px;
+}
+@media (max-width: 600px){
+    .display_move_drink_winegrape{
+        display: inline;
+    }
+}
+.current_release{
+    background-color: rgba(13, 27, 13, 0.589);
+    width: 600px;
+    height: 650px;
+    position: absolute;
+    top: 340%;
+    left: 8.65%;
+    border-radius: 20% 0% 0% 0%;
+}
+@media (max-width: 600px){
+    .current_release{
+        background-color: rgba(13, 27, 13, 0.589);
+        width: 380px;
+        height: 400px;
+        position: absolute;
+        top: 539.70%;
+        left: 2%;
+        border-radius: 20% 0% 0% 0%;
+    }   
+}
+.current_releasewethrive{
+    width: 400px;
+    font-size: 45px;
+    font-family: gabriola;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 80px;
+    margin-top: 210px;
+}
+@media (max-width:600px){
+    .current_releasewethrive{
+        width: 300px;
+        font-size: 35px;
+        font-family: gabriola;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        margin: 40px;
+        margin-top: 120px;
+    }   
+}
+.grape_icon{
+    width: 120px;
+    position: absolute;
+    top: 16%;
+    left: 38%;
+}
+@media (max-width: 600px){
+    .grape_icon{
+        width: 80px;
+        position: absolute;
+        top: 16%;
+        left: 40%;
+    }   
+}
+
+/***content4****/
+.wine_left{
+    width: 650px;
+    height: 450px;
+    margin-top: 90px;
+    margin-left: 30px;
+    filter: drop-shadow(8px 16px 4px rgb(24, 23, 23));
+}
+@media (max-width: 600px){
+    .wine_left{
+        width: 350px;
+        height: 250px;
+        margin-top: 90px;
+        margin-left: 10px;
+        filter: drop-shadow(8px 16px 4px rgb(24, 23, 23));
+    }   
+}
+.display_theawardnumber{
+    display: flex;
+    gap: 140px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+@media (max-width: 600px){
+    .display_theawardnumber{
+        display: inline;
+        position: absolute;
+        top: 1000%;
+        left: 15%;
+    }   
+}
+.Varietals{
+    font-family: candara;
+    font-size: 23px;    
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+.Wineproduced{
+    font-family: candara;
+    font-size: 23px;    
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+.Awardswon{
+    font-family: candara;
+    font-size: 23px;    
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+.imgaa{
+    background-color: rgb(250, 225, 193);
+    width: 800px;
+    border-radius: 6%;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+@media (max-width: 600px){
+    .imgaa{
+        background-color: rgb(250, 225, 193);
+        width: 100%;
+        height: 700px;
+        border-radius: 6%;
+        margin-top: 80px;
+        margin-left: 0px;
+    }   
+}
+.ital{
+    width: 400px;
+    height: 470px;
+    background-color: rgb(243, 238, 232);
+    margin-top: -560px;
+    margin-left: 800px;
+}
+@media (max-width: 600px){
+    .ital{
+        width: 100%;
+        height: 470px;
+        background-color: rgb(243, 238, 232);
+        margin-top: -20px;
+        margin-left: -2px;
+        border-radius: 10%;
+    }   
+}
+.varie{
+    font-family: candara;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70px;
+    color: orange;
+}
+.thered{
+    font-family: gabriola;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: -30px;
+}
+.dash1{
+    width: 40px;
+    height: 2px;
+    background-color: orange;
+    margin-left: 70px;
+}
+.Cabe_Sauvignon{
+    font-size: 18px;
+    font-family: candara;
+    margin-top: -12px;
+    margin-left: 120px;
+}
+.shopno{
+    margin-left: 70px;
+    width: 170px;
+    height: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: candara;
+    font-weight: bold;
+    font-size: 15px;
+}
+/**content5**/
+.imgaa2{
+    float: right;
+    background-color: rgb(250, 225, 193);
+    width: 800px;
+    border-radius: 6%;
+    margin-top: 100px;
+    margin-right: 70px;
+}
+@media (max-width: 600px){
+    .imgaa2{
+        float: right;
+        background-color: rgb(250, 225, 193);
+        width: 100%;
+        height: 700px;
+        border-radius: 6%;
+        margin-top: 100px;
+        margin-right: 0;
+    }   
+}
+.ital2{
+    float: left;
+    width: 400px;
+    height: 470px;
+    background-color: rgb(243, 238, 232);
+    margin-top: -560px;
+    margin-left: 130px;
+}
+@media (max-width: 600px){
+    .ital2{
+        float: left;
+        width: 100%;
+        height: 470px;
+        background-color: rgb(243, 238, 232);
+        margin-top: 0px;
+        margin-left: 0;
+        border-radius: 10%;
+    }   
+}
+.wine_right{
+    width: 850px;
+    height: 450px;
+    margin-top: 90px;
+    margin-left: -50px;
+    filter: drop-shadow(-7px 16px 4px rgb(24, 23, 23));
+}
+@media (max-width: 600px){
+    .wine_right{
+        width: 450px;
+        height: 250px;
+        margin-top: 50px;
+        margin-left: -72px;
+        filter: drop-shadow(-7px 16px 4px rgb(24, 23, 23));
+    }   
+}
+.display_theawardnumber2{
+    display: flex;
+    gap: 140px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+@media (max-width: 600px){
+    .display_theawardnumber2{
+        display: inline;
+        position: absolute;
+        top: 763%;
+        left: 15%;
+    }   
+}
+
+/***content6***/
+.readmorepics{
+    width: 625px;
+    height: 640px;
+    margin-top: 150px;
+    margin-left: 55px;
+}
+@media (max-width: 600px){
+    .readmorepics{
+        width: 100%;
+        height: 440px;
+        margin-left: 0px;
+        margin-top: 70px;
+        
+    }   
+}
+.readmore{
+    background-color: rgb(233, 231, 226);
+    width: 600px;
+    height: 640px;
+    margin-top: -643px;
+    margin-left: 680px;
+}
+@media (max-width: 600px){
+    .readmore{
+        background-color: rgb(233, 231, 226);
+        width: 100%;
+        height: 600px;
+        margin-top: -10px;
+        margin-left: 0px;
+    }   
+}
+.theestat{
+    font-family: candara;
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+}
+.tasteNDtour{
+    font-family: Monotype Corsiva;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -15px;
+}
+.lorem2{
+    font-size: 20px;
+    font-family: candara;
+    text-align: center;
+    width: 400px;
+    margin-left: 110px;
+}
+@media (max-width: 600px){
+    .lorem2{
+        font-size: 18px;
+        font-family: candara;
+        text-align: center;
+        width: 300px;
+        margin-left: 35px;
+        margin-top: -40px;
+    }   
+}
+.read{
+    margin-top: 70px;
+    margin-left: 240px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-family: candara;
+    font-weight: bold;
+}
+@media (max-width: 600px){
+    .read{
+        margin-top: 70px;
+        margin-left: 120px;
+        background-color: black;
+        color: white;
+        border: none;
+        width: 150px;
+        height: 45px;
+        font-family: candara;
+        font-weight: bold;
+    }   
+}
+.readmorepics2{
+    width: 600px;
+    height: 640px;
+    margin-left: 680px;
+}
+@media (max-width: 600px){
+    .readmorepics2{
+        width: 100%;
+        height: 600px;
+        margin-left: 0px;
+    }   
+}
+.readmore2{
+    background-color: rgb(233, 231, 226);
+    width: 630px;
+    height: 640px;
+    margin-top: -646px;
+    margin-left: 55px;
+}
+@media (max-width: 600px){
+    .readmore2{
+        background-color: rgb(233, 231, 226);
+        width: 100%;
+        height: 720px;
+        margin-top: -3px;
+        margin-left: 0px;
+    }   
+}
+.theests{
+    font-family: candara;
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+.weddingpriva{
+    font-family: Monotype Corsiva;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    margin-top: -12px;
+}
+.loerem2{
+    font-family: candara;
+    font-size: 20px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 110px;
+    text-align: center;
+}
+@media (max-width: 600px){
+    .loerem2{
+        font-family: candara;
+        font-size: 18px;
+        width: 300px;
+        margin-top: 100px;
+        margin-left: 40px;
+        text-align: center;
+    }   
+}
+
+/***content7****/
+.content7{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(201, 198, 191);
+    margin-top: 170px;
+}
+.instagram_{
+    width: 350px;
+    height: 600px;
+    background-color: black;
+    margin-left: 52px;
+}
+@media (max-width: 600px){
+    .instagram_{
+        width: 100%;
+        height: 390px;
+        background-color: black;
+        margin-left: 0px;
+    }   
+}
+.instagramfolo{
+    font-size: 50px;
+    font-family: gabriola;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.follower24{
+    font-family: gabriola;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -95px;
+}
+.insrafoll{
+    font-family: candaara;
+    font-size: 14px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin-top: -110px;
+}
+.followus{
+    margin-top: 70px;
+    margin-left: 100px;
+    background-color: rgb(211, 207, 207);
+    color: orange;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-family: candara;
+    font-weight: bold;
+    cursor: pointer; 
+}
+@media (max-width: 600px){
+    .followus{
+        margin-top: 70px;
+        margin-left: 120px;
+        background-color: rgb(211, 207, 207);
+        color: orange;
+        border: none;
+        width: 150px;
+        height: 45px;
+        font-family: candara;
+        font-weight: bold;
+        cursor: pointer; 
+    }   
+}
+.picss1{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 919.70%;
+    left: 30%;
+}
+@media (max-width: 600px){
+    .picss1{
+        width: 384px;
+        height: 300px;
+        position: absolute;
+        top: 1727%;
+        left: 2%;
+    }   
+}
+.picss2{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 963.70%;
+    left: 30%;
+}
+@media (max-width: 600px){
+    .picss2{
+        width: 384px;
+        height: 300px;
+        position: absolute;
+        top: 1780%;
+        left: 2%;
+    }   
+}
+.picss3{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 919.70%;
+    left: 51.90%;
+}
+@media (max-width: 600px){
+    .picss3{
+        width: 384px;
+        height: 300px;
+        position: absolute;
+        top: 1830%;
+        left: 2%;
+    }   
+}
+
+.picss4{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 963.70%;
+    left: 51.90%;
+}
+@media (max-width: 600px){
+    .picss4{
+        width: 384px;
+        height: 280px;
+        position: absolute;
+        top: 1880%;
+        left: 2%;
+    }   
+}
+.picss5{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 919.70%;
+    left: 73.80%;
+}
+@media (max-width: 600px){
+    .picss5{
+        width: 384px;
+        height: 300px;
+        position: absolute;
+        top: 1930%;
+        left: 2%;
+    }   
+}
+.picss6{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 963.70%;
+    left: 73.80%;
+}
+@media (max-width: 600px){
+    .picss6{
+        width: 384px;
+        height: 300px;
+        position: absolute;
+        top: 1980%;
+        left: 2%;
+    }   
+}
+/***content8***/
+.farmland{
+    width: 100%;
+    height: 600px;
+}
+@media (max-width: 600px){
+    .farmland{
+        width: 100%;
+        margin-top: 1470px;
+    }
+}
+
+.farmestate{
+    width: 98.80%;
+    height: 600px;
+    background-color: rgba(255, 252, 252, 0.212);
+    position: absolute;
+    top: 1019.29%
+}
+@media (max-width: 600px){
+    .farmestate{
+        width: 100%;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.212);
+        position: absolute;
+        top: 2045%;
+    }   
+}
+.farmestatethe{
+    font-size: 18px;
+    font-family: candara;
+    font-weight: bold;
+    color: rgb(189, 124, 4);
+    text-align: center;
+}
+.vissit{
+    font-size: 55px;
+    font-family: gabriola;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -25px;
+}
+.lorreem{
+    font-size: 17px;
+    font-family: candara;
+    width: 600px;
+    text-align: center;
+    margin-left: 380px;
+    font-weight: bold;
+}
+@media (max-width: 600px){
+    .lorreem{
+        font-size: 17px;
+        font-family: candara;
+        width: 300px;
+        text-align: center;
+        margin-left: 40px;
+        font-weight: bold;
+    }   
+}
+.gaellery{
+    margin-top: 70px;
+    margin-left: 480px;
+    background-color: rgb(94, 77, 77);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-family: candara;
+    font-weight: bold;
+    cursor: pointer; 
+}
+@media (max-width: 600px){
+    .gaellery{
+        margin-top: 50px;
+        margin-left: 120px;
+        background-color: rgb(94, 77, 77);
+        color: white;
+        border: none;
+        width: 150px;
+        height: 45px;
+        font-family: candara;
+        font-weight: bold;
+        cursor: pointer; 
+    }   
+}
+.theestate{
+    margin-top: 70px;
+    margin-left: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-family: candara;
+    font-weight: bold;
+    cursor: pointer; 
+}
+@media{
+    .theestate{
+        margin-top: 0px;
+        margin-left: 120px;
+        background-color: black;
+        color: white;
+        border: none;
+        width: 150px;
+        height: 45px;
+        font-family: candara;
+        font-weight: bold;
+        cursor: pointer; 
+    }   
+}
+
+/***content9****/
+.beconne{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: candara;
+    color: orange;
+    text-align: center;
+}
+
+.joinournew{
+    font-size: 55px;
+    font-family: gabriola;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -20px;
+}
+.content9{
+    padding: 10%;
+}
+.textcontet9{
+    width: 800px;
+    height: 70px;
+    margin-left: 140px;
+    border-width: 1px;
+    border-left-color: black;
+    border-right-color: black;
+    border-top-color: red;
+    border-bottom-color: red;
+    font-size: 20px;
+    font-family: candara;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+@media (max-width: 600px){
+    .textcontet9{
+        width: 300px;
+        height: 40px;
+        margin-left: 0px;
+        border-width: 1px;
+        border-left-color: black;
+        border-right-color: black;
+        border-top-color: red;
+        border-bottom-color: red;
+        font-size: 20px;
+        font-family: candara;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        margin-bottom: 80px;
+    }   
+}
+.signnnupp{
+    width: 120px;
+    height: 74px;
+    position: absolute;
+    top: 1154%;
+    margin-left: -120px;
+    font-family: gabriola;
+    font-size: 25px;
+    border-style: none;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    .signnnupp{
+        width: 120px;
+        height: 50px;
+        position: absolute;
+        top: 2222%;
+        margin-left: -55%;
+        font-family: gabriola;
+        font-size: 25px;
+        border-style: none;
+        cursor: pointer;
+    }   
+}
+/***content10***/
+.contenlast{
+    background-color: black;
+    width: 100%;
+    height: 500px;
+}
+.italin_emasterrpromsi{
+    font-size: 16px;
+    font-family: candara;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+}
+.wemaooodwine{
+    font-size: 50px;
+    color: white;
+    font-family: gabriola;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -15px;
+}
+.lastlistttt{
+    margin-top: 90px;
+    font-size: 16px;
+    font-family: candara;
+    list-style-type: none;
+
+}
+@media (max-width:600px){
+    
+}
+.lastlistfaqreturn{
+    display: flex;
+    gap: 80px;
+}
+@media (max-width:600px){
+    .lastlistfaqreturn{
+        display: flex;
+        gap: 50px;
+    }   
+}
+@media (max-width: 600px){
+    .lastlist{
+        margin-left: -23px;
+    }
+}
+.iitaalineereserve{
+    font-family: candara;
+    font-size: 16px;
+    color: rgb(163, 106, 0);
+    font-weight: bold;
+    margin-left: 1000px;
+    margin-top: -35px;
+}
+@media (max-width: 600px){
+    .iitaalineereserve{
+        font-family: candara;
+        font-size: 16px;
+        color: rgb(163, 106, 0);
+        font-weight: bold;
+        margin-left: 50px;
+        margin-top: 50px;
+    }   
+}

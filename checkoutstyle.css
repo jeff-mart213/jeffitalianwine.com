@@ -1,0 +1,752 @@
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    z-index: 1;
+    border-bottom: 3px solid orange;
+
+}
+@media (max-width: 600px){
+    .header{
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        padding: 0;
+        position: fixed;
+        left: 0%;
+        top: 0;
+        z-index: 1;
+        border-bottom: 3px solid orange;
+    
+    }   
+}
+.itlogo{
+    width: 100px;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+@media (max-width: 600px) {
+    .itlogo {
+      width: 90px;
+      margin-left: -10px;
+      margin-top: -5px;
+    }
+  }
+
+.Italian{
+    font-family: Candara;
+    font-size: 18px;
+    color: orange;
+    font-weight: 700;
+    margin-left: 125px;
+    margin-top: -75px;
+}
+@media (max-width: 600px) {
+    .Italian {
+        font-family: Candara;
+        font-size: 15px;
+        color: orange;
+        font-weight: 700;
+        margin-left: 17%;
+        margin-top: -65px;
+        }
+  }
+
+  .menu{
+    display: flex;
+    gap: 90px;
+    list-style: none;
+    font-size: 15px;
+    font-family: candara;
+    font-weight: 700;
+    margin-left: 500px;
+    margin-top: -30px;
+  }
+  @media (max-width: 600px){
+    .menu{
+        display: none;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: orange;
+    transition: all 0.3s;
+  }
+
+
+  /******for mobile dropdown menu********/
+  .menu_icon{
+    display: none;
+  }
+  @media (max-width: 600px){
+    .menu_icon{
+        display: inline-block;
+        position: absolute;
+        left: 87%;
+        top: 25%;    
+    }
+  }
+
+
+  .dropdownlist{
+    color: white;
+    list-style-type: none;
+    padding: 17px;
+    font-family: gabriola;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+  }
+  @media (max-width: 600px){
+    .dropdownlist{
+        background-color: rgb(29, 28, 28);
+        width: 100%;
+        color: white;
+        list-style-type: none;
+        padding: 17px;
+        font-family: gabriola;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+        border-bottom: 3px solid orange;
+      }
+  }
+  
+  @media (max-width: 600px){
+  .dropdownitem{
+    background-color: orange;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    display: none;
+  }
+  }
+
+  @media (max-width: 600px){
+  .dropdown:hover .dropdownitem{
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        display: inline-block;
+  } 
+  }
+  /*****end of mobile dropdown menu******/
+
+/***content1***/
+.content1{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+.italinnawine{
+    font-size: 18px;
+    font-family: candara;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+.ourstory{
+    font-size: 60px;
+    font-family: gabriola;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: -18px;
+}
+.lorreeem1{
+    font-size: 18px;
+    font-family: candara;
+    color: rgb(170, 169, 169);
+    text-align: center;
+    width: 500px;
+    margin-left: 32%;
+    margin-top: 60px;
+}
+@media (max-width: 600px){
+    .lorreeem1{
+        font-size: 16px;
+        font-family: candara;
+        color: rgb(170, 169, 169);
+        text-align: center;
+        width: 300px;
+        margin-left: 12%;
+        margin-top: 60px;
+    }   
+}
+
+/*****content2*******/
+.content2{
+  margin: 100px 0px 0px 100px;
+}
+.billingdetail{
+  font-family: gabriola;
+  font-size: 50px;
+  font-weight: bold;
+}
+.firstform{
+  margin-top: -4%;
+}
+.innnnn{
+  width: 300px;
+  height: 50px;
+}
+@media (max-width: 600px){
+  .innnnn{
+    width: 340px;
+    height: 50px;
+    margin-left: -70px;
+  } 
+}
+.innnnn2{
+  width: 300px;
+  height: 50px;
+  margin-left: 26%;
+  margin-top: 14px;
+}
+@media (max-width: 600px){
+  .innnnn2{
+    width: 340px;
+    height: 50px;
+    margin-left: -70px;
+    margin-top: 5px;
+  } 
+}
+.firtt{
+  font-size: 14px;
+  font-family: candara;
+  font-weight: bold;
+}
+@media (max-width: 600px){
+  .firtt{
+    font-family: candara;
+    font-weight: bold;
+    margin-left: -70px;
+  } 
+}
+.lasss{
+  margin-top: -100px;
+  margin-left: 330px;
+  font-family: candara;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media (max-width: 600px){
+  .lasss{
+    margin-top: 20px;
+    margin-left: -70px;
+    font-family: candara;
+    font-weight: bold;
+  } 
+}
+.countryy{
+  font-size: 14px;
+  font-family: candara;
+  font-weight: bold; 
+}
+@media (max-width: 600px){
+  .countryy{
+    font-size: 14px;
+    font-family: candara;
+    font-weight: bold; 
+    margin-left: -70px;
+  } 
+}
+.selectcountry{
+  width: 635px;
+  height: 50px;
+  font-family: candara;
+  font-weight: bold;
+}
+@media (max-width: 600px){
+  .selectcountry{
+    width: 340px;
+  height: 50px;
+  font-family: candara;
+  font-weight: bold;
+    margin-left: -70px;
+  }
+}
+.strreetaddre{
+  font-size: 14px;
+  font-family: candara;
+  font-weight: bold;
+}
+@media (max-width: 600px){
+  .strreetaddre{
+    font-size: 14px;
+    font-family: candara;
+    font-weight: bold;
+    margin-left: -70px;
+  } 
+}
+.strreetad{
+  width: 635px;
+  height: 50px;
+}
+@media (max-width: 600px){
+  .strreetad{
+    width: 340px;
+    height: 50px;
+    margin-left: -70px;
+  } 
+}
+.townn{
+  font-family: candara;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media (max-width: 600px){
+  .townn{
+    font-family: candara;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: -70px;
+  } 
+}
+.towwnnn{
+  width: 635px;
+  height: 50px;
+}
+@media (max-width: 600px){
+  .towwnnn{
+    width: 340px;
+    height: 50px;
+    margin-left: -70px;
+  } 
+}
+@media (max-width: 600px){
+  .cehhe{
+    margin-left: -70px;
+  }
+}
+.creatt{
+  font-family: candara;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media (max-width: 600px){
+  .creatt{
+    font-family: candara;
+    font-weight: bold;
+    font-size: 14px;
+  
+  } 
+}
+.shipp{
+  font-family: candara;
+  font-weight: bold;
+}
+.orderrrnote{
+  font-family: candara;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media (max-width: 600px){
+  .orderrrnote{
+    font-family: candara;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: -70px;
+  } 
+}
+.noteaboutyourr{
+  width: 520px;
+  padding: 5%;
+  font-size: 16px;
+}
+@media (max-width: 600px){
+  .noteaboutyourr{
+    width: 265px;
+    padding: 40px;
+    font-size: 16px;
+    margin-top: -10px;
+  } 
+}
+
+/****content3*******/
+.content3{
+  width: 440px;
+  height: 446px;
+  border: 1px solid rgb(224, 159, 60);
+  border-radius: 5%;
+  margin-top: -89%;
+  margin-left: 61%;
+  box-shadow: 0px 0px 7px rgb(145, 144, 144);
+}
+@media (max-width: 600px){
+  .content3{
+    width: 100%;
+    height: 446px;
+    border: 1px solid rgb(224, 159, 60);
+    border-radius: 5%;
+    margin-top: 0%;
+    margin-left: 0%;
+    box-shadow: 0px 0px 7px  rgb(145, 144, 144);
+  } 
+}
+.yourorderr{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: gabriola;
+  margin-left: 27px;
+  margin-top: 20px;
+}
+.producttsubtotal{
+  display: flex;
+  gap: 60%;
+  margin-left: 27px;
+  margin-top: -40px;
+}
+.productt{
+  font-size: 15px;
+  font-family: candara;
+  font-weight: bold;
+}
+.subtoo{
+  font-size: 15px;
+  font-family: candara;
+  font-weight: bold;
+}
+.producttsubtotal1{
+  display: flex;
+  gap: 50%;
+  margin-left: 27px;
+}
+.producttsubtotal2{
+  display: flex;
+  gap: 63%;
+  margin-left: 27px;
+}
+.producttsubtotal3{
+  display: flex;
+  gap: 70%;
+  margin-left: 27px;
+}
+.producttsubtotal4{
+  display: flex;
+  gap: 58%;
+  margin-left: 27px;
+}
+.hrrr{
+  width: 380px;
+}
+
+/******content4***/
+.listoftransfee{
+    width: 440px;
+    height: 465px;
+    border: 1px solid rgb(224, 159, 60);
+    border-radius: 5%;
+    margin-top: 0%;
+    margin-left: 61%;
+    box-shadow: 0px 0px 7px rgb(145, 144, 144);
+}
+@media (max-width: 600px){
+  .listoftransfee{
+    width: 100%;
+    height: 465px;
+    border: 1px solid rgb(224, 159, 60);
+    border-radius: 5%;
+    margin-top: 0%;
+    margin-left: 0%;
+    box-shadow: 0px 0px 7px rgb(145, 144, 144);
+} 
+}
+.Directbanktr{
+  font-family: candara;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 30px;
+  width: 320px;
+  height: 20px;
+  background-color: rgb(182, 180, 180);
+  margin-left: 40px;
+  gap: 170px;
+  display: flex;
+  cursor: pointer;
+}
+@media (max-width: 600px){
+  .Directbanktr{
+    font-family: candara;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 30px;
+    width: 320px;
+    height: 20px;
+    background-color: rgb(182, 180, 180);
+    margin-left: 12px;
+    gap: 170px;
+    display: flex;
+    cursor: pointer;
+  } 
+}
+.mark{
+  width: 20px;
+}
+.Directbanktr2{
+  font-family: candara;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 30px;
+  width: 320px;
+  height: 20px;
+  background-color: rgb(182, 180, 180);
+  margin-left: 40px;
+  gap: 170px;
+  display: flex;
+}
+@media (max-width: 600px){
+  .Directbanktr2{
+    font-family: candara;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 30px;
+    width: 320px;
+    height: 20px;
+    background-color: rgb(182, 180, 180);
+    margin-left: 12px;
+    gap: 170px;
+    display: flex;
+  } 
+}
+.Directbanktr3{
+  font-family: candara;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 30px;
+  width: 320px;
+  height: 20px;
+  background-color: rgb(182, 180, 180);
+  margin-left: 40px;
+  gap: 170px;
+  display: flex;
+}
+.paragraphondirect{
+  width: 350px;
+  font-size: 16px;
+  font-family: candara;
+  margin-left: 40px;
+  margin-top: -2px;
+}
+@media (max-width: 600px){
+  .paragraphondirect{
+    width: 350px;
+    font-size: 16px;
+    font-family: candara;
+    margin-left: 12px;
+    margin-top: -2px;
+  } 
+}
+.paracheckpayment{
+  width: 350px;
+  font-size: 16px;
+  font-family: candara;
+  margin-left: 40px;
+  margin-top: -2px;
+}
+@media (max-width: 600px){
+  .paracheckpayment{
+    width: 350px;
+    font-size: 16px;
+    font-family: candara;
+    margin-left: 12px;
+    margin-top: -2px;
+  } 
+}
+.cashondeliver{
+  width: 350px;
+  font-size: 16px;
+  font-family: candara;
+  margin-left: 40px;
+  margin-top: -2px;
+}
+@media (max-width: 600px){
+  .cashondeliver{
+    width: 350px;
+    font-size: 16px;
+    font-family: candara;
+    margin-left: 12px;
+    margin-top: -2px;
+  } 
+}
+.dirr{
+  font-family: candara;
+  font-size: 19px;
+}
+.seleecct{
+  background-color: rgb(241, 190, 94);
+  width: 200px;
+  padding: 10px;
+  margin-left: 40px;
+  border: none;
+}
+@media (max-width: 600px){
+  .seleecct{
+    background-color: rgb(241, 190, 94);
+    width: 200px;
+    padding: 10px;
+    margin-left: 14px;
+    border: none;
+  } 
+}
+.dirrrr{
+  font-weight: bold;
+}
+
+/***content5*****/
+.content5{
+  width: 440px;
+  height: 250px;
+  border: 1px solid rgb(224, 159, 60);
+  border-radius: 5%;
+  margin-top: 0%;
+  margin-left: 61%;
+  box-shadow: 0px 0px 7px rgb(145, 144, 144);
+}
+@media (max-width: 600px){
+  .content5{
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgb(224, 159, 60);
+    border-radius: 5%;
+    margin-top: 0%;
+    margin-left: 0%;
+    box-shadow: 0px 0px 7px rgb(145, 144, 144);
+  } 
+}
+.yourperson{
+  width: 400px;
+  font-size: 16px;
+  font-family: candara;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+@media (max-width: 600px){
+  .yourperson{
+    width: 370px;
+    font-size: 16px;
+    font-family: candara;
+    margin-top: 40px;
+    margin-left: 12px;
+  } 
+}
+.ihaveread{
+  font-size: 14px;
+  font-weight: bold;
+  font-family: candara;
+}
+.checkkk{
+  margin-left: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 600px){
+  .checkkk{
+    margin-left: 12px;
+    margin-top: 25px;
+  }
+}
+.placeeorederr{
+  font-family: candara;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  width: 385px;
+  border-style: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+@media (max-width: 600px){
+  .placeeorederr{
+    font-family: candara;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 385px;
+    border-style: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 0px;
+  } 
+}
+
+/***content10***/
+.contenlast{
+  background-color: black;
+  width: 100%;
+  height: 500px;
+}
+.italin_emasterrpromsi{
+  font-size: 16px;
+  font-family: candara;
+  color: orange;
+  font-weight: bold;
+  text-align: center;
+}
+.wemaooodwine{
+  font-size: 50px;
+  color: white;
+  font-family: gabriola;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -15px;
+}
+.lastlistttt{
+  margin-top: 90px;
+  font-size: 16px;
+  font-family: candara;
+  list-style-type: none;
+
+}
+@media (max-width:600px){
+  
+}
+.lastlistfaqreturn{
+  display: flex;
+  gap: 80px;
+}
+@media (max-width:600px){
+  .lastlistfaqreturn{
+      display: flex;
+      gap: 50px;
+  }   
+}
+@media (max-width: 600px){
+  .lastlist{
+      margin-left: -23px;
+  }
+}
+.iitaalineereserve{
+  font-family: candara;
+  font-size: 16px;
+  color: rgb(163, 106, 0);
+  font-weight: bold;
+  margin-left: 1000px;
+  margin-top: -35px;
+}
+@media (max-width: 600px){
+  .iitaalineereserve{
+      font-family: candara;
+      font-size: 16px;
+      color: rgb(163, 106, 0);
+      font-weight: bold;
+      margin-left: 50px;
+      margin-top: 50px;
+  }   
+}
